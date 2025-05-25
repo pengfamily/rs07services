@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peng Services | Skilling, Bossing, PvM, OSRS Gold</title>
+    <link rel="stylesheet" href="../style-services.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <div id="preloader"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const preloader = document.getElementById('preloader');
+        // Smooth Page Exit
+        document.querySelectorAll('a.smooth-link').forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const href = this.getAttribute('href');
+            preloader.style.display = 'block';
+            setTimeout(() => {
+              window.location.href = href;
+            }, 500); // Matches transition time
+          });
+        });
+        // Smooth Page Load
+        window.addEventListener('pageshow', () => {
+          preloader.style.opacity = '0';
+          setTimeout(() => {
+            preloader.style.display = 'none';
+          }, 500);
+        });
+      });
+    </script>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector('.navbar ul');
+        const toggle = document.querySelector('.menu-toggle');
+        menu.classList.toggle('active');
+        toggle.classList.toggle('active');
+      }
+
+      function toggleDropdown(event) {
+        if (event.target.closest('li').classList.contains('has-dropdown')) {
+          event.target.closest('li').classList.toggle('show');
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="style-services.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="file:///C:/Users/jhonn/OneDrive/Escritorio/ventaweb/Peng%20Services/index.html">
+          <img src="../Peng Services/imagenes/logo.png" alt="Peng Services Logo">
+        </a>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul onclick="toggleDropdown(event)">
+        <li>
+          <a href="file:///C:/Users/jhonn/OneDrive/Escritorio/ventaweb/Gold%20and%20Items/gold-items.html">Gold and Items</a>
+        </li>
+        <li>
+          <a href="file:///C:/Users/jhonn/OneDrive/Escritorio/ventaweb/Blood%20Torva/blood-torva.html">Blood Torva</a>
+        </li>
+        <li>
+          <a href="file:///C:/Users/jhonn/OneDrive/Escritorio/ventaweb/Infernal%20Capes/infernal-cape.html">Infernal Capes</a>
+        </li>
+        <li>
+          <a href="file:///C:/Users/jhonn/OneDrive/Escritorio/ventaweb/Megascales/megascales.html">Megascales</a>
+        </li>
+        <li>
+          <a href="file:///C:/Users/jhonn/OneDrive/Escritorio/ventaweb/Services/services.html">Services</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="discord">
+          <a href="https://discord.gg/pengservices" target="_blank">
+            <img src="../Peng Services/imagenes/Discord.png" alt="Discord">
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Custom Services Section -->
+    <section class="custom-services-section">
+      <h2 class="custom-services-title">Our Services</h2>
+      <div class="custom-services-grid">
+        <a href="infernal-cape.html" class="custom-service-card">
+          <img src="../Services/img/minigames.png" alt="Infernal Cape" class="custom-service-icon">
+          <p class="custom-service-text">Infernal Cape</p>
+        </a>
+        <a href="blood-torva.html" class="custom-service-card">
+          <img src="../Services/img/blood.png" alt="Blood Torva" class="custom-service-icon">
+          <p class="custom-service-text">Blood Torva</p>
+        </a>
+        <a href="quiver.html" class="custom-service-card">
+          <img src="../Services/img/quiver.png" alt="Dizana's quiver" class="custom-service-icon">
+          <p class="custom-service-text">Dizana's quiver</p>
+        </a>
+        <a href="diaries.html" class="custom-service-card">
+          <img src="../Services/img/diaries.png" alt="Diaries" class="custom-service-icon">
+          <p class="custom-service-text">Diaries</p>
+        </a>
+        <a href="quests.html" class="custom-service-card">
+          <img src="../Services/img/quests.png" alt="Quests" class="custom-service-icon">
+          <p class="custom-service-text">Quests</p>
+        </a>
+        <a href="minigames.html" class="custom-service-card">
+          <img src="../Services/img/minigames.png" alt="Minigames" class="custom-service-icon">
+          <p class="custom-service-text">Minigames</p>
+        </a>
+        <a href="skilling.html" class="custom-service-card">
+          <img src="../Services/img/skills.png" alt="Skilling" class="custom-service-icon">
+          <p class="custom-service-text">Skilling</p>
+        </a>
+        <a href="pvm.html" class="custom-service-card">
+          <img src="../Services/img/pvm.png" alt="PvM" class="custom-service-icon">
+          <p class="custom-service-text">PvM</p>
+        </a>
+        <a href="build.html" class="custom-service-card">
+          <img src="../Services/img/build.png" alt="Build an Account" class="custom-service-icon">
+          <p class="custom-service-text">Build an Account</p>
+        </a>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Section: Logo and Description -->
+        <div class="footer-section footer-left">
+          <img src="../Peng Services/imagenes/PengLogo.png" alt="Peng Services Logo">
+          <p> Providing efficient and affordable Peng Services, we have completed over $500,000 in orders across numerous sites. Speak to Live Chat if you need any support. </p>
+        </div>
+        <!-- Middle Section: Help and Links -->
+        <div class="footer-section footer-middle">
+          <h3>Quick Links</h3>
+          <ul>
+            <ul>
+            </li>
+            <li>
+              <a href="https://discord.gg/pengservices">Discord</a>
+            </li>
+            <li>
+              <a href="https://www.eldorado.gg/users/PengGP?tab=Feedback">Eldorado</a>
+            </li>
+            <li>
+              <a href="https://www.sythe.org/threads/peng-services-vouch-thread/">Sythe</a>
+            </li>
+            <li>
+              <a href="https://www.trustpilot.com/review/penggp.com/">Trustpilot</a>
+            </li>
+        </div>
+        <div class="footer-section footer-right">
+          <h3>Our Commitment</h3>
+          <p> Dedicated to offering secure and efficient Peng Services. Our team operates with professionalism and transparency, ensuring customer satisfaction. </p>
+          <h4>Join our Discord <a href="https://discord.gg/pengservices">
+              <img src="../Peng Services/imagenes/Discord.png" alt="Discord">
+            </a>
+          </h4>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Peng Services. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="chat.js"></script>
+  </body>
+  <style>
+  body {
+      font-family: Arial, sans-serif;
+      background-image: url('../Services/img/fnd.jpeg');
+
+      background-size: cover;
+      background-position: center;
+      color:#333;
+      min-height: 100vh;
+      font-size: 16px;
+  }
+     /* Navegación */
+     .navbar {
+     background: rgba(0, 0, 0, 0.8);
+     
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+     }
+
+     .navbar .logo img {
+     height: 60px;
+     }
+     .navbar ul {
+     display: flex;
+     list-style: none;
+     }
+
+     .navbar ul li {
+     margin: 0 20px;
+     }
+
+     .navbar ul li a {
+     color: #fff;
+     text-decoration: none;
+     font-weight: 600;
+     padding: 12px 18px;
+     border-radius: 5px;
+     transition: background 0.3s ease;
+     }
+
+.navbar ul li a:hover {
+background: #ff7f50;
+color: #fff;
+}
+  .container {
+      max-width: 58rem;
+      margin: auto;
+      padding: 2rem;
+      text-align: center;
+  }
+  .title {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+  }
+  .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+  }
+  .button-group button {
+      padding: 0.5rem 1rem;
+      border: 1px solid rgb(6, 26, 61);
+      background-color: rgb(6, 26, 61);
+      color: grey;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-weight: bold;
+  }
+  .button-group button.active {
+      background-color: rgb(14, 43, 92);
+      color: white;
+      font-weight: bold;
+  }
+  .button-group button:hover {
+      background-color: rgb(14, 43, 92);
+      border-color: rgb(14, 43, 92);
+      color: grey;
+  }
+  .accordion-container {
+      display: none;
+  }
+  .accordion-container.active {
+      display: block;
+  }
+  .accordion {
+      text-align: left;
+      border: 1px solid rgb(255, 255, 255);
+      background-color: rgb(0, 110, 255);
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      overflow: hidden;
+  }
+  .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      background-color: rgb(11, 4, 112);
+      border-bottom: 1px solid rgb(3, 18, 45);
+
+  }
+  .accordion-header:hover {
+      text-decoration: underline;
+  }
+  .accordion-header svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      transition: transform 0.3s;
+  }
+  .accordion-header.open svg {
+      transform: rotate(180deg);
+  }
+  .accordion-content {
+      padding: 1rem;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      display: none;
+      background-color: rgba(0, 98, 255, 0.822);
+  }
+  .accordion-content.open {
+      display: block;
+  }
+  /* Pie de página */
+.footer {
+background: rgba(0, 0, 0, 0.8);
+color: #fff;
+padding: 40px 20px;
+position: relative;
+bottom: 0;
+width: 100%;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+.footer-container .footer-section {
+width: 30%;
+}
+
+.footer-bottom {
+text-align: center;
+font-size: 0.9em;
+}
+
+.footer a {
+color: #fff;
+text-decoration: none;
+}
+
+.footer a:hover {
+text-decoration: underline;
+color: #ff7043;
+}
+
+
+</style>
+</html> 

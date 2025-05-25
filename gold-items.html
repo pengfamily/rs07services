@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peng Services | Skilling, Bossing, PvM, OSRS Gold</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector('.navbar ul');
+        const toggle = document.querySelector('.menu-toggle');
+        menu.classList.toggle('active');
+        toggle.classList.toggle('active');
+      }
+
+      function toggleDropdown(event) {
+        if (event.target.closest('li').classList.contains('has-dropdown')) {
+          event.target.closest('li').classList.toggle('show');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="file:///C:/Users/jhonn/OneDrive/Escritorio/ventaweb/Peng%20Services/index.html">
+          <img src="../Peng Services/imagenes/logo.png" alt="Peng Services Logo">
+        </a>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul onclick="toggleDropdown(event)">
+        <li><a href="file:///C:/Users/jhonn/OneDrive/Escritorio/ventaweb/Gold%20and%20Items/gold-items.html">Gold and Items</a></li>
+        <li><a href="file:///C:/Users/jhonn/OneDrive/Escritorio/ventaweb/Blood%20Torva/blood-torva.html">Blood Torva</a></li>
+        <li><a href="file:///C:/Users/jhonn/OneDrive/Escritorio/ventaweb/Infernal%20Capes/infernal-cape.html">Infernal Capes</a></li>
+        <li><a href="file:///C:/Users/jhonn/OneDrive/Escritorio/ventaweb/Megascales/megascales.html">Megascales</a></li>
+        <li><a href="file:///C:/Users/jhonn/OneDrive/Escritorio/ventaweb/Services/services.html">Services</a></li>
+      </ul>
+	  </div>
+      <ul>
+        <li class="discord">
+          <a href="https://discord.gg/pengservices" target="_blank">
+            <img src="../Peng Services/imagenes/Discord.png" alt="Discord">
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="preloader"></div>
+    <!-- Tabs Section -->
+    <section class="tabs-section">
+      <div class="tabs-container">
+        <!-- Main Tabs (Gold & Items) -->
+        <div class="tab-buttons">
+          <button class="tab-btn active" onclick="switchTab('gold-tab')">
+            <img src="../Gold and Items/img/gold1.png" alt="Gold Icon" class="tab-icon"> Gold </button>
+          <button class="tab-btn" onclick="switchTab('items-tab')">
+            <img src="../Gold and Items/img/items1.png" alt="Items Icon" class="tab-icon"> Items </button>
+        </div>
+        <!-- Gold Tab Content -->
+        <div id="gold-tab" class="tab-content active">
+          <h3>Buy / Sell OSRS Gold</h3>
+          <!-- Buy/Sell Sub-Tabs -->
+          <div class="sub-tab-buttons">
+            <button class="sub-tab-btn active" onclick="switchSubTab('buy')">Buy</button>
+            <button class="sub-tab-btn" onclick="switchSubTab('sell')">Sell</button>
+          </div>
+
+<section class="infernal-section">
+  <h2>OSRS Gold</h2>
+  <div class="golditem-container">
+    <!-- Buy Tab Content -->
+    <div id="buy-tab" class="sub-tab-content active">
+      <h4>Buy OSRS Gold</h4>
+      <div class="form-group">
+        <label for="buy-amount">
+          <img src="../Gold and Items/img/coins.png" alt="Coins Icon"><b> Millions (GP):</b>
+        </label>
+        <input type="number" id="buy-amount" class="form-input" placeholder="Enter amount" oninput="validateMillions(this); calculatePrice('buy')">
+      </div>
+      <div class="form-group">
+        <label for="buy-rsn"><b>📝 RSN:</b></label>
+        <input type="text" id="buy-rsn" class="form-input" placeholder="Your RuneScape Name" oninput="validateRSN(this)">
+      </div>
+      <div class="total-price-container">
+        <h3>Total Price: <strong>$<span id="buy-total">0.00</span></strong></h3>
+        <p class="total-price">
+          
+        </p>
+      </div>
+	  <br>
+      <button class="submit-btn1" onclick="submitForm('buy')"><b>💬 BUY NOW</b></button>
+<br>
+<br>
+<br>
+<br>
+We strictly use 100+ Combat P2P accounts to ensure safety and minimize the risk of real-world trade bans.
+    </div>
+    
+    <!-- Sell Tab Content -->
+    <div id="sell-tab" class="sub-tab-content">
+      <h4>Sell OSRS Gold</h4>
+      <div class="form-group">
+        <label for="sell-amount">
+          <img src="../Gold and Items/img/coins.png" alt="Coins Icon"> <b>Millions (GP):</b>
+        </label>
+        <input type="number" id="sell-amount" class="form-input" placeholder="Enter amount" oninput="validateMillions(this); calculatePrice('sell')">
+      </div>
+      <div class="form-group">
+        <label for="sell-rsn"><b>📝 RSN:</b></label>
+        <input type="text" id="sell-rsn" class="form-input" placeholder="Your RuneScape Name" oninput="validateRSN(this)">
+      </div>
+      <div class="total-price-container">
+        <h3>Total Price:<strong> $<span id="sell-total">0.00</span></strong></h3>
+        <p class="total-price">
+          
+        </p>
+      </div>
+	  <br>
+      <button class="submit-btn1" onclick="submitForm('sell')"><b>💬 SELL NOW</b></button>
+	  <br>
+<br>
+<br>
+<br>
+We strictly use 100+ Combat P2P accounts to ensure safety and minimize the risk of real-world trade bans.
+    </div>
+  </div>
+
+
+        </div>
+        <!-- Items Tab Content -->
+        <div id="items-tab" class="tab-content">
+          <h3>Purchase Items</h3>
+          <center>
+            <button class="submit-btn" onclick="submitItemOrder()">💬 BUY NOW</button>
+          </center>
+          <br>
+          <br>
+          <input type="text" id="item-search" placeholder="Search for an item..." onkeyup="searchItems()">
+          <center>
+            <p>Total Price: $ <span id="item-total-price">0.00</span>
+            </p>
+          </center>
+          <ul id="item-list">
+            <li>
+              <img src="../Gold and Items/img/3rd_age_druidic_robe_bottom.png" alt="3rd Age Druidic Robe Bottom">
+              <p>3rd Age Druidic Robe Bottom - $490.00</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="520.00" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/twisted_bow.png" alt="Twisted Bow">
+              <p>Twisted Bow - $285.64</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="316.80" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/tumeken_shadow.png" alt="Tumeken's Shadow (Uncharged)">
+              <p>Tumeken's Shadow (Uncharged) - $217/p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="234.75" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/3rd_age_bow.png" alt="3rd Age Bow">
+              <p>3rd Age Bow - $425.20</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="425.20" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/3rd_age_druidic_cloak.png" alt="3rd Age Druidic Cloak">
+              <p>3rd Age Druidic Cloak - $367.49</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="367.49" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/3rd_age_longsword.png" alt="3rd Age Longsword">
+              <p>3rd Age Longsword - $425.20</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="425.20" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/scythe_of_vitur.png" alt="Scythe of Vitur">
+              <p>Scythe of Vitur - $280</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="318.78" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/elysian_spirit_shield.png" alt="Elysian Spirit Shield">
+              <p>Elysian Spirit Shield - $142.76</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="142.76" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/3rd_age_druidic_staff.png" alt="3rd Age Druidic Staff">
+              <p>3rd Age Druidic Staff - $257.82</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="257.82" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/torva_platebody.png" alt="Torva Platebody">
+              <p>Torva Platebody - $58.14</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="68.14" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/zaryte_crossbow.png" alt="Zaryte Crossbow">
+              <p>Zaryte Crossbow - $68.31</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="68.31" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/nihil_horn.png" alt="Nihil Horn">
+              <p>Nihil Horn - $55.82</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="55.82" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="/Gold and Items/img/torva_platelegs.png" alt="Torva Platelegs">
+              <p>Torva Platelegs - $53.27</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="53.27" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/3rd_age_cloak.png" alt="3rd Age Cloak">
+              <p>3rd Age Cloak - $166.52</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="166.52" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/harmonised_orb.png" alt="Harmonised Orb">
+              <p>Harmonised Orb - $66.02</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="66.02" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/eldritch_orb.png" alt="Eldritch Orb">
+              <p>Eldritch Orb - $54.17</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="54.17" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/torva_full_helm.png" alt="Torva Full Helm">
+              <p>Torva Full Helm - $36.32</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="36.32" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/inquisitors_mace.png" alt="Inquisitor's Mace">
+              <p>Inquisitor's Mace - $61.87</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="71.87" oninput="updateItemTotal()">
+            </li>
+            <li>
+              <img src="../Gold and Items/img/ultor_ring.png" alt="Ultor Ring">
+              <p>Ultor Ring - $36.25</p>
+              <label>Quantity:</label>
+              <input type="number" class="item-quantity" min="0" value="0" data-price="36.25" oninput="updateItemTotal()">
+            </li>
+          </ul>
+          <center>
+            <button class="submit-btn" onclick="submitItemOrder()">💬 BUY NOW</button>
+          </center>
+        </div>
+      </div>
+    </section>
+    <script>
+      // ✅ Toggle Menu
+      function toggleMenu() {
+        const menu = document.querySelector('.navbar ul');
+        const toggle = document.querySelector('.menu-toggle');
+        menu.classList.toggle('active');
+        toggle.classList.toggle('active');
+      }
+      // ✅ Toggle Dropdown
+      function toggleDropdown(event) {
+        const target = event.target.closest('li');
+        if (target && target.classList.contains('has-dropdown')) {
+          target.classList.toggle('show');
+        }
+      }
+      // ✅ Fetch Prices from GitHub (Swapped Logic)
+      async function fetchPrices() {
+        try {
+          const response = await fetch('https://raw.githubusercontent.com/OSRS-PVM/Prices/main/prices.json');
+          if (!response.ok) throw new Error('Failed to fetch prices');
+          const data = await response.json();
+          if (data.buy_price && data.sell_price) {
+            // Swapping the logic
+            document.getElementById('buy-rate').innerText = `$${data.sell_price}/m`;
+            document.getElementById('sell-rate').innerText = `$${data.buy_price}/m`;
+            window.buyRate = parseFloat(data.sell_price); // Used for customers buying
+            window.sellRate = parseFloat(data.buy_price); // Used for customers selling
+          } else {
+            throw new Error('Invalid price data');
+          }
+        } catch (error) {
+          console.error('Error fetching prices:', error);
+          document.getElementById('buy-rate').innerText = `$N/A`;
+          document.getElementById('sell-rate').innerText = `$N/A`;
+          window.buyRate = 0;
+          window.sellRate = 0;
+        }
+      }
+      // ✅ Switch Tabs (Main Tabs)
+      function switchTab(tab) {
+        document.querySelectorAll('.tab-content').forEach(tabContent => tabContent.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.getElementById(`${tab}-tab`).classList.add('active');
+        document.querySelector(`[onclick="switchTab('${tab}')"]`).classList.add('active');
+      }
+      // ✅ Switch Sub-Tabs (Buy/Sell)
+      function switchSubTab(subTab) {
+        document.querySelectorAll('.sub-tab-content').forEach(content => content.classList.remove('active'));
+        document.querySelectorAll('.sub-tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.getElementById(`${subTab}-tab`).classList.add('active');
+        document.querySelector(`[onclick="switchSubTab('${subTab}')"]`).classList.add('active');
+      }
+      // ✅ Validate Millions Input
+      function validateMillions(input) {
+        input.value = input.value.replace(/[^0-9]/g, '').slice(0, 6);
+      }
+      // ✅ Validate RSN Input
+      function validateRSN(input) {
+        input.value = input.value.replace(/[^a-zA-Z0-9 ]/g, '').slice(0, 12);
+      }
+      // ✅ Calculate Total Price
+      function calculatePrice(type) {
+        let rate = type === 'buy' ? window.buyRate : window.sellRate;
+        let amount = document.getElementById(`${type}-amount`).value;
+        let total = (amount * rate).toFixed(2);
+        document.getElementById(`${type}-total`).innerText = total || '0.00';
+      }
+      // ✅ Submit Form to Live Chat
+      function submitForm(type) {
+        const amount = document.getElementById(`${type}-amount`).value;
+        const rsn = document.getElementById(`${type}-rsn`).value;
+        if (!amount || !rsn) {
+          alert('Please fill in all fields.');
+          return;
+        }
+        const action = type === 'buy' ? 'Buying' : 'Selling';
+        const total = document.getElementById(`${type}-total`).innerText;
+        const message = `I am ${action} ${amount}M worth of gold ($${total}), and my RSN is: ${rsn}`;
+        sendChatMessage(message);
+      }
+      // ✅ Send Message to Chat
+      function sendChatMessage(message) {
+        if (window.smartsupp) {
+          smartsupp('chat:open');
+          smartsupp('chat:message', message);
+          console.log('✅ Message sent to LiveChat:', message);
+        } else {
+          console.error('❌ Smartsupp not initialized.');
+          alert('Live Chat is not ready. Please try again later.');
+        }
+      }
+      // ✅ Search Items
+      function searchItems() {
+        const searchTerm = document.getElementById('item-search').value.toLowerCase();
+        const items = document.querySelectorAll('#item-list li');
+        items.forEach(item => {
+          const text = item.querySelector('p').innerText.toLowerCase();
+          item.style.display = text.includes(searchTerm) ? 'flex' : 'none';
+        });
+      }
+      // ✅ Calculate Total Price for Items
+      function updateItemTotal() {
+        let total = 0;
+        document.querySelectorAll('.item-quantity').forEach(input => {
+          const quantity = parseInt(input.value) || 0;
+          const price = parseFloat(input.getAttribute('data-price')) || 0;
+          total += quantity * price;
+        });
+        document.getElementById('item-total-price').innerText = total.toFixed(2);
+      }
+      // ✅ Submit Item Order to Live Chat
+      function submitItemOrder() {
+        let selectedItems = [];
+        let total = 0;
+        document.querySelectorAll('.item-quantity').forEach(input => {
+          const quantity = parseInt(input.value) || 0;
+          const price = parseFloat(input.getAttribute('data-price')) || 0;
+          if (quantity > 0) {
+            const itemName = input.closest('li').querySelector('p').innerText.split('-')[0].trim();
+            const itemTotal = (quantity * price).toFixed(2);
+            selectedItems.push(`${quantity} x ${itemName} - $${itemTotal}`);
+            total += quantity * price;
+          }
+        });
+        if (selectedItems.length > 0) {
+          let message = `I would like to order the following items:\n\n`;
+          selectedItems.forEach(item => {
+            message += `- ${item}\n`;
+          });
+          message += `\nTotal Price: $${total.toFixed(2)}`;
+          sendChatMessage(message);
+          console.log('✅ Items sent to Live Chat:', message);
+        } else {
+          alert('⚠️ Please select at least one item by entering a quantity.');
+        }
+      }
+      // ✅ On Page Load
+      window.onload = fetchPrices;
+    </script>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Section: Logo and Description -->
+        <div class="footer-section footer-left">
+          <img src="../Peng Services/imagenes/PengLogo.png" alt="Peng Services Logo">
+          <p> Providing efficient and affordable Peng Services, we have completed over $500,000 in orders across numerous sites. Speak to Live Chat if you need any support. </p>
+        </div>
+        <!-- Middle Section: Help and Links -->
+        <div class="footer-section footer-middle">
+          <h3>Quick Links</h3>
+          <ul>
+            <ul>
+            </li>
+            <li>
+              <a href="https://discord.gg/pengservices">Discord</a>
+            </li>
+            <li>
+              <a href="https://www.eldorado.gg/users/PengGP?tab=Feedback">Eldorado</a>
+            </li>
+            <li>
+              <a href="https://www.sythe.org/threads/peng-services-vouch-thread/">Sythe</a>
+            </li>
+            <li>
+              <a href="https://www.trustpilot.com/review/penggp.com/">Trustpilot</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section footer-right">
+          <h3>Our Commitment</h3>
+          <p> Dedicated to offering secure and efficient Peng Services. Our team operates with professionalism and transparency, ensuring customer satisfaction. </p>
+          <h4>Join our Discord <a href="https://discord.gg/pengservices">
+              <img src="../Peng Services/imagenes/Discord.png" alt="Discord">
+            </a>
+          </h4>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Peng Services. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="chat.js"></script>
+    <script src="gold-item.js"></script>
+    <script src="script.js"></script>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('img/fondowb.jpeg');
+        background-size: cover;
+        background-position: center;
+        color:#333;
+        min-height: 100vh;
+        font-size: 16px;
+    }
+       /* Navegación */
+       .navbar {
+       background: rgba(0, 0, 0, 0.8);
+       
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+       }
+
+       .navbar .logo img {
+       height: 60px;
+       }
+       .navbar ul {
+       display: flex;
+       list-style: none;
+       }
+
+       .navbar ul li {
+       margin: 0 20px;
+       }
+
+       .navbar ul li a {
+       color: #fff;
+       text-decoration: none;
+       font-weight: 600;
+       padding: 12px 18px;
+       border-radius: 5px;
+       transition: background 0.3s ease;
+       }
+
+.navbar ul li a:hover {
+background: #ff7f50;
+color: #fff;
+}
+    .container {
+        max-width: 58rem;
+        margin: auto;
+        padding: 2rem;
+        text-align: center;
+    }
+    .title {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+    }
+    .button-group {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    .button-group button {
+        padding: 0.5rem 1rem;
+        border: 1px solid rgb(6, 26, 61);
+        background-color: rgb(6, 26, 61);
+        color: grey;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-weight: bold;
+    }
+    .button-group button.active {
+        background-color: rgb(14, 43, 92);
+        color: white;
+        font-weight: bold;
+    }
+    .button-group button:hover {
+        background-color: rgb(14, 43, 92);
+        border-color: rgb(14, 43, 92);
+        color: grey;
+    }
+    .accordion-container {
+        display: none;
+    }
+    .accordion-container.active {
+        display: block;
+    }
+    .accordion {
+        text-align: left;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(0, 110, 255);
+        margin-bottom: 1rem;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    .accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        background-color: rgb(11, 4, 112);
+        border-bottom: 1px solid rgb(3, 18, 45);
+
+    }
+    .accordion-header:hover {
+        text-decoration: underline;
+    }
+    .accordion-header svg {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        transition: transform 0.3s;
+    }
+    .accordion-header.open svg {
+        transform: rotate(180deg);
+    }
+    .accordion-content {
+        padding: 1rem;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        display: none;
+        background-color: rgba(0, 98, 255, 0.822);
+    }
+    .accordion-content.open {
+        display: block;
+    }
+    /* Pie de página */
+.footer {
+background: rgba(0, 0, 0, 0.8);
+color: #fff;
+padding: 40px 20px;
+position: relative;
+bottom: 0;
+width: 100%;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+.footer-container .footer-section {
+width: 30%;
+}
+
+.footer-bottom {
+text-align: center;
+font-size: 0.9em;
+}
+
+.footer a {
+color: #fff;
+text-decoration: none;
+}
+
+.footer a:hover {
+text-decoration: underline;
+color: #ff7043;
+}
+
+
+</style>
+</html>
